@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import ChocoloopPlayer from "@/components/chocoplayer/ChocoloopPlayer";
 
 export default function ChocoloopPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -37,7 +38,7 @@ export default function ChocoloopPage() {
       // Chocolate
       ctx.fillStyle = "#4A3728"
       ctx.fillRect(posX + 5, posY + 18, sandwichWidth - 10, 20)
-      
+
       // Goteo de chocolate
       ctx.beginPath()
       ctx.ellipse(posX + 20, posY + 42, 6, 8, 0, 0, Math.PI * 2)
@@ -116,7 +117,22 @@ export default function ChocoloopPage() {
               <canvas
                 ref={canvasRef}
                 className="w-full h-full"
-              />*/} 
+              />*/}
+              <iframe
+                src="https://chocoloop-live.jaimezpepruebas.workers.dev/watch"
+                scrolling="no"
+                allow="autoplay; fullscreen"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  display: "block",
+                  overflow: "hidden",
+                }}
+              />
+
+
+
               <div className="absolute top-4 left-4 flex items-center gap-2">
                 <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
                 <span className="text-xs tracking-widest uppercase text-[#5a4a3a]">En vivo</span>
@@ -137,14 +153,14 @@ export default function ChocoloopPage() {
                 <div>
                   <h3 className="text-[#D4A574] text-lg mb-4">El concepto</h3>
                   <p className="leading-relaxed">
-                    Un sándwich de crema de chocolate rebotando sin parar sobre un fondo negro. 
+                    Un sándwich de crema de chocolate rebotando sin parar sobre un fondo negro.
                     Nada cambia. Ese es el punto.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[#D4A574] text-lg mb-4">La misión</h3>
                   <p className="leading-relaxed">
-                    Transmitiendo 24 horas al día, porque alguien tiene que hacerlo. 
+                    Transmitiendo 24 horas al día, porque alguien tiene que hacerlo.
                     Sí, esto es absolutamente necesario.
                   </p>
                 </div>
@@ -182,7 +198,7 @@ export default function ChocoloopPage() {
           <div className="container mx-auto px-6">
             <div className="max-w-2xl mx-auto text-center">
               <blockquote className="text-2xl md:text-3xl font-light leading-relaxed mb-8">
-                &ldquo;En un mundo de contenido efímero, ofrecemos lo único verdaderamente eterno: 
+                &ldquo;En un mundo de contenido efímero, ofrecemos lo único verdaderamente eterno:
                 un sándwich de chocolate en movimiento.&rdquo;
               </blockquote>
               <p className="text-sm text-[#5a4a3a] tracking-widest uppercase">
