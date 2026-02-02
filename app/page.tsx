@@ -89,7 +89,7 @@ export default function ChocoloopPage() {
       <header className="border-b border-[#2a1f1a] py-6">
         <div className="container mx-auto px-6">
           <nav className="flex items-center justify-between">
-            <span className="text-sm tracking-[0.3em] uppercase">Transmitiendo desde 2024</span>
+            <span className="text-sm tracking-[0.3em] uppercase">Transmitiendo desde 2026</span>
             <span className="text-sm tracking-[0.3em] uppercase">24/7</span>
           </nav>
         </div>
@@ -112,11 +112,11 @@ export default function ChocoloopPage() {
         {/* Video Player */}
         <section className="container mx-auto px-6 pb-20">
           <div className="max-w-4xl mx-auto">
-            <div className="border border-[#2a1f1a] bg-[#0a0a0a] aspect-video relative overflow-hidden">
+            <div className="border border-[#2a1f1a] bg-[#0a0a0a] aspect-video relative overflow-hidden">{/*
               <canvas
                 ref={canvasRef}
                 className="w-full h-full"
-              />
+              />*/} 
               <div className="absolute top-4 left-4 flex items-center gap-2">
                 <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
                 <span className="text-xs tracking-widest uppercase text-[#5a4a3a]">En vivo</span>
@@ -137,7 +137,7 @@ export default function ChocoloopPage() {
                 <div>
                   <h3 className="text-[#D4A574] text-lg mb-4">El concepto</h3>
                   <p className="leading-relaxed">
-                    Un sándwich de chocolate rebotando perpetuamente sobre un fondo negro. 
+                    Un sándwich de crema de chocolate rebotando sin parar sobre un fondo negro. 
                     Nada cambia. Ese es el punto.
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export default function ChocoloopPage() {
                   <h3 className="text-[#D4A574] text-lg mb-4">La misión</h3>
                   <p className="leading-relaxed">
                     Transmitiendo 24 horas al día, porque alguien tiene que hacerlo. 
-                    Sí, este canal es absolutamente necesario.
+                    Sí, esto es absolutamente necesario.
                   </p>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default function ChocoloopPage() {
                 <div className="border-b border-[#2a1f1a] pb-8">
                   <h3 className="text-[#D4A574] text-lg mb-3">¿Puedo contribuir al proyecto?</h3>
                   <p className="leading-relaxed">
-                    Su contribución más valiosa es simplemente observar. Eso es suficiente. Eso es todo.
+                    tu contribución más valiosa es simplemente observar. Eso es suficiente. Eso es todo.
                   </p>
                 </div>
                 <div>
@@ -233,7 +233,7 @@ export default function ChocoloopPage() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-[#5a4a3a]">
             <p className="tracking-wide">Chocoloop Television Network</p>
-            <p className="tracking-wide">Una experiencia de relevancia cultural absoluta</p>
+            <p className="tracking-wide">© No tenemos copyright, asi que no nos copies por favor.</p>
             <p className="tracking-wide">Transmitiendo indefinidamente</p>
           </div>
         </div>
